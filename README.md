@@ -22,6 +22,6 @@ Welcome to the Tesla Landing Page project! This project is a sleek and modern la
 
 ## License:
 
-This project is licensed under the terms of the [MIT License](https://github.com/SirDalbag/tesla-landing-page/blob/master/LICENSE.txt).
+This project is licensed under the terms of the [MIT License](https://github.com/SirDalbag/tesla-landing-page/blob/main/LICENSE.txt).
 
-![Preview](https://github.com/SirDalbag/tesla-landing-page/blob/master/public/assets/images/preview.png)
+![Preview](https://github.com/SirDalbag/tesla-landing-page/blob/main/public/assets/images/preview.png)
