@@ -1,0 +1,401 @@
+@import url("fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "GothamSSM", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(23, 26, 32);
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: initial;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .logo {
+  width: 120px;
+  height: 24px;
+  color: inherit;
+}
+
+header .nav-item {
+  margin-left: 10px;
+  padding: 5px 10px 5px 10px;
+  transition: 0.3s ease;
+}
+
+header .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10%;
+}
+
+header .icon {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  transition: 0.3s ease;
+}
+
+header .icon:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10%;
+}
+
+header a.mobile {
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+header .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header .dropdown-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+header .nav-item:hover .dropdown-content {
+  display: block;
+}
+
+aside {
+  display: none;
+  flex-direction: column;
+  row-gap: 60px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+  padding: 20px 40px;
+  top: 0;
+  z-index: 4;
+  font-size: 1rem;
+}
+
+aside.open {
+  display: flex;
+}
+
+aside a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+aside .close-button {
+  align-self: flex-end;
+  border: 0;
+}
+
+aside .aside-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .aside-item .icon {
+  width: 16px;
+  height: 16px;
+}
+
+section {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main > section:nth-child(1) {
+  background-image: url("../../public/assets/images/model-y-mobile.png");
+}
+
+main > section:nth-child(2) {
+  background-image: url("../../public/assets/images/model-3-mobile.png");
+}
+
+main > section:nth-child(3) {
+  background-image: url("../../public/assets/images/model-x-mobile.png");
+}
+
+main > section:nth-child(4) {
+  background-image: url("../../public/assets/images/model-s-mobile.png");
+}
+
+main > section:nth-child(5) {
+  background-image: url("../../public/assets/images/cybertruck-mobile.png");
+}
+
+main > section:nth-child(6) {
+  background-image: url("../../public/assets/images/solar-panels-mobile.png");
+}
+
+main > section:nth-child(7) {
+  background-image: url("../../public/assets/images/solar-roof-mobile.png");
+}
+
+main > section:nth-child(8) {
+  background-image: url("../../public/assets/images/powerwall-mobile.png");
+}
+
+main > section:nth-child(9) {
+  background-image: url("../../public/assets/images/accessories-mobile.png");
+  position: relative;
+}
+
+main > section:nth-child(9)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+section .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+}
+
+section .content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+section .content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+section .content h3 {
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+section .content h4 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+section .content h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+section .content h6 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+section .content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section .content span {
+  font-weight: 500;
+}
+
+section .content .cybertruck-logo {
+  width: 300px;
+  height: 80px;
+}
+
+section .buttons {
+  display: grid;
+  row-gap: 20px;
+  min-width: 400px;
+}
+
+section .buttons a {
+  display: block;
+  text-decoration: none;
+  background-color: rgb(238, 238, 238);
+  color: inherit;
+  padding: 15px 50px;
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+}
+
+section .buttons a:nth-child(2):not(.cybertruck-button a) {
+  background-color: rgba(23, 26, 32, 0.65);
+  color: rgb(255, 255, 255);
+}
+
+section .cybertruck-button a {
+  background-color: rgba(17, 17, 17, 0.85);
+  font-weight: 600;
+  color: rgb(162, 163, 165);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 4px solid rgba(162, 163, 165, 0.8);
+  border-radius: 0%;
+}
+
+section .cybertruck-button a:nth-child(2) {
+  border: 1px solid rgba(162, 163, 165, 0.5);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  color: rgb(238, 238, 238);
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer .details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.75rem;
+  max-width: 675px;
+  font-weight: 400;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+footer .links a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  aside.open {
+    display: none;
+  }
+
+  main > section:nth-child(1) {
+    background-image: url("../../public/assets/images/model-y-desktop.png");
+  }
+
+  main > section:nth-child(2) {
+    background-image: url("../../public/assets/images/model-3-desktop.png");
+  }
+
+  main > section:nth-child(3) {
+    background-image: url("../../public/assets/images/model-x-desktop.png");
+  }
+
+  main > section:nth-child(4) {
+    background-image: url("../../public/assets/images/model-s-desktop.png");
+  }
+
+  main > section:nth-child(5) {
+    background-image: url("../../public/assets/images/cybertruck-desktop.png");
+  }
+
+  main > section:nth-child(6) {
+    background-image: url("../../public/assets/images/solar-panels-desktop.png");
+  }
+
+  main > section:nth-child(7) {
+    background-image: url("../../public/assets/images/solar-roof-desktop.png");
+  }
+
+  main > section:nth-child(8) {
+    background-image: url("../../public/assets/images/powerwall-desktop.png");
+  }
+
+  main > section:nth-child(9) {
+    background-image: url("../../public/assets/images/accessories-desktop.png");
+  }
+
+  section .content .cybertruck-logo {
+    width: 450px;
+    height: 125px;
+  }
+
+  section .buttons {
+    min-width: 600px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  footer .links {
+    flex-direction: row;
+    column-gap: 15px;
+  }
+}
