@@ -1,25 +1,22 @@
-/* GothamSSM Book */
 @font-face {
   font-family: "GothamSSM";
-  src: url("../../public/assets/fonts/GothamSSm/GothamSSM-Book.woff2")
+  src: url("/tesla-landing-page/public/assets/fonts/GothamSSm/GothamSSM-Book.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-/* GothamSSM Medium */
 @font-face {
   font-family: "GothamSSM";
-  src: url("../../public/assets/fonts/GothamSSm/GothamSSM-Medium.woff2")
+  src: url("/tesla-landing-page/public/assets/fonts/GothamSSm/GothamSSM-Medium.woff2")
     format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
-/* GothamSSM Bold */
 @font-face {
   font-family: "GothamSSM";
-  src: url("../../public/assets/fonts/GothamSSm/GothamSSM-Bold.woff2")
+  src: url("/tesla-landing-page/public/assets/fonts/GothamSSm/GothamSSM-Bold.woff2")
     format("woff2");
   font-weight: 700;
   font-style: normal;
