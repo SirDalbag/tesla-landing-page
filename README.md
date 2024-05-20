@@ -12,7 +12,7 @@ Welcome to the Tesla Landing Page project! This project is a sleek and modern la
 - **Interactive Elements**: Engaging animations and interactive components to enhance user engagement.
 - **Clean and Modern Layout**: A minimalistic design that aligns with Tesla's brand identity.
 
-> *Feel free to explore the code, and don't hesitate to contribute if you have suggestions or improvements. Together, we can create an even more impressive landing page!*
+> _Feel free to explore the code, and don't hesitate to contribute if you have suggestions or improvements. Together, we can create an even more impressive landing page!_
 
 ## How to Run:
 
@@ -21,6 +21,7 @@ Welcome to the Tesla Landing Page project! This project is a sleek and modern la
 3. Enjoy the experience!
 
 ## License:
+
 This project is licensed under the terms of the [MIT License](https://github.com/SirDalbag/tesla-landing-page/blob/main/LICENSE).
 
-![Preview](https://github.com/SirDalbag/tesla-landing-page/blob/main/public/assets/images/preview)
+![Preview](https://github.com/SirDalbag/tesla-landing-page/blob/master/public/assets/images/preview.png)
